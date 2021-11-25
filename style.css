@@ -1,0 +1,183 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: rgba(0, 0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 14, 94, 0.904) 0%,
+    rgb(15, 0, 51)
+  );
+  );
+  background: opacity (0.5);
+  z-index: 0;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 0 2em;
+  color: rgba(13, 255, 5, 0.747);
+  font-size: 50px;
+}
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1em;
+  color: rgb(47, 216, 31);
+}
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .nameTile {
+    font-size: 40px;
+  }
+
+  li {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .nameTile {
+    font-size: 30px;
+  }
+
+  li {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .nameTile {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 20px;
+  }
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameTile {
+
+  background-color: rgba(3, 1, 48, 0.925);
+  border-radius: 20px;
+  box-shadow: rgb(47, 216, 31) 0px 0px 10px;
+  font-size: 40px;
+  margin: 0em;
+  padding: 0.2em 2em;
+  cursor: pointer;
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+checkbox {
+  border-radius: 30px;
+}
+#container > div:nth-child(26) {
+  margin-top: 1.5em;
+  margin-bottom: 7em;
+}
+
+.nameTile:hover {
+  transform: scale(1.1);
+}
+
+.hideTile {
+  margin-top: 1em;
+  justify-content: flex-start;
+  height: 0;
+  overflow: hidden;
+  transform: translateX(-100vw);
+  transition: transform 1s ease-in-out;
+}
+
+.display {
+  opacity: 1;
+  height: auto;
+  transform: translateX(0);
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  border-bottom: 2px rgba(97, 93, 93, 0.349) solid;
+  padding: 0.5em;
+  font-size: 30px;
+  max-width: 70vw;
+}
+
+input[type="checkbox"] {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 2em;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  color: rgb(26, 180, 26);
+}
+
+input[type="checkbox"]:after {
+  background-color: white;
+  display: block;
+}
+
+input[type="checkbox"]:checked:after {
+  content: " \2714 ";
+  border: 1px solid;
+  border-radius: 10%;
+  padding: 0 0.3em;
+}
+
+.done {
+  border: 5px rgb(24, 117, 29) solid;
+  background-color: rgba(55, 141, 15, 0.199);
+  transition: all 1s ease-in-out;
+  transform: scale(1.2);
+}
+
+.percent {
+  font-size: 1.5em;
+  height: 1.5em;
+  margin-bottom: 1em;
+  font-weight: 700;
+  color: rgb(20, 211, 30);
+}
+
+.dot {
+  width: 0.5em;
+  height: 0.5em;
+  margin: 1em;
+  background-color: rgba(97, 93, 93, 0.801);
+  position: relative;
+  top: 10px;
+}
+
+.displayDot {
+  display: none;
+}
